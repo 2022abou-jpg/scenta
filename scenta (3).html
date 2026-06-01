@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scenta · Perfumeria Natural</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#b8924a;--cream:#faf7f2;--dark:#1a1614;--muted:#8a7d74;--border:#e8d5a8}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--dark)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;border-bottom:1px solid var(--border);background:var(--cream);position:sticky;top:0;z-index:10}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;letter-spacing:0.3em;text-transform:uppercase}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.nav-links a:hover{color:var(--gold)}
+.hero{text-align:center;padding:6rem 2rem 5rem;border-bottom:1px solid var(--border)}
+.hero-tag{font-size:0.68rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,7vw,5rem);font-weight:300;line-height:1.1;margin-bottom:1.2rem}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p{font-size:0.92rem;color:var(--muted);max-width:480px;margin:0 auto 2.5rem;line-height:1.9}
+.btn{display:inline-block;padding:0.8rem 2.4rem;border:1px solid var(--gold);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--dark);text-decoration:none;font-family:'Jost',sans-serif;cursor:pointer;background:transparent;transition:all 0.3s}
+.btn:hover{background:var(--gold);color:#fff}
+.section{padding:5rem 3rem}
+.section-header{text-align:center;margin-bottom:3rem}
+.section-label{font-size:0.65rem;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:0.7rem}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:300}
+.divider{width:40px;height:1px;background:var(--gold);margin:1rem auto 0}
+.products-section{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:var(--border);max-width:1100px;margin:0 auto}
+.card{background:#fff;padding:2rem 1.8rem;transition:background 0.25s}
+.card:hover{background:var(--cream)}
+.card-family{font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem}
+.card-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;margin-bottom:0.8rem;line-height:1.2}
+.card-notes{font-size:0.78rem;color:var(--muted);margin-bottom:1.2rem;line-height:1.6}
+.card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:1rem;border-top:1px solid var(--border)}
+.card-price{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--gold)}
+.card-vol{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted)}
+.values-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:2rem;max-width:900px;margin:0 auto}
+.value-item{text-align:center;padding:1.5rem}
+.value-icon{font-size:1.6rem;margin-bottom:0.8rem}
+.value-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;margin-bottom:0.4rem}
+.value-text{font-size:0.82rem;color:var(--muted);line-height:1.7}
+.about-section{background:#1a1614;color:#f0ebe0;text-align:center;padding:5rem 3rem}
+.about-section .section-label{color:var(--border)}
+.about-section .section-title{color:#f0ebe0}
+.about-section p{font-size:0.9rem;color:#a89e96;max-width:560px;margin:1.5rem auto 0;line-height:2}
+.contact-section{padding:4rem 3rem;text-align:center;border-top:1px solid var(--border)}
+.contact-info{margin-top:1.5rem;display:flex;justify-content:center;gap:3rem;flex-wrap:wrap}
+.contact-item .label{font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--muted);margin-bottom:0.3rem}
+.contact-item .val{font-family:'Cormorant Garamond',serif;font-size:1.1rem}
+footer{text-align:center;padding:1.5rem;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Scenta</div>
+  <ul class="nav-links">
+    <li><a href="#perfums">Perfums</a></li>
+    <li><a href="#nosaltres">Nosaltres</a></li>
+    <li><a href="#contacte">Contacte</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <p class="hero-tag">Perfumeria natural · Artesanal · Sostenible</p>
+  <h1>Fragàncies <em>úniques</em><br>fetes a mida</h1>
+  <p>Perfums naturals i sostenibles fets amb ingredients ecològics i sense químics agressius. Connectem amb la identitat de cada persona.</p>
+  <a class="btn" href="#perfums">Descobrir la col·lecció</a>
+</section>
+
+<section class="section products-section" id="perfums">
+  <div class="section-header">
+    <p class="section-label">Col·lecció</p>
+    <h2 class="section-title">Els nostres perfums</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <p class="card-family">Cítric · Fresc</p>
+      <h3 class="card-name">Explosion Orange</h3>
+      <p class="card-notes">Taronja dolça · Mandarina · Neroli · Cedre</p>
+      <div class="card-footer"><span class="card-price">85 €</span><span class="card-vol">50 ml · EDP</span></div>
+    </div>
+    <div class="card">
+      <p class="card-family">Floral · Boscós</p>
+      <h3 class="card-name">Fraîcheur Floral</h3>
+      <p class="card-notes">Lavanda · Rosa · Petitgrain · Cedre</p>
+      <div class="card-footer"><span class="card-price">85 €</span><span class="card-vol">50 ml · EDP</span></div>
+    </div>
+    <div class="card">
+      <p class="card-family">Fruitat · Dolç</p>
+      <h3 class="card-name">Fruits Sucrés</h3>
+      <p class="card-notes">Maduixa · Mandarina · Vainilla · Cedre</p>
+      <div class="card-footer"><span class="card-price">85 €</span><span class="card-vol">50 ml · EDP</span></div>
+    </div>
+    <div class="card">
+      <p class="card-family">Gourmand · Oriental</p>
+      <h3 class="card-name">Douce Gourmande</h3>
+      <p class="card-notes">Vainilla · Benzoí · Taronja dolça · Cedre</p>
+      <div class="card-footer"><span class="card-price">85 €</span><span class="card-vol">50 ml · EDP</span></div>
+    </div>
+    <div class="card">
+      <p class="card-family">Fusta · Terrós</p>
+      <h3 class="card-name">Bois Lourd</h3>
+      <p class="card-notes">Cedre · Vetiver · Llimona · Petitgrain</p>
+      <div class="card-footer"><span class="card-price">85 €</span><span class="card-vol">50 ml · EDP</span></div>
+    </div>
+    <div class="card">
+      <p class="card-family">Cítric · Lleuger</p>
+      <h3 class="card-name">Éclat d'Agrumes</h3>
+      <p class="card-notes">Llimona · Taronja dolça · Petitgrain · Cedre</p>
+      <div class="card-footer"><span class="card-price">85 €</span><span class="card-vol">50 ml · EDP</span></div>
+    </div>
+    <div class="card">
+      <p class="card-family">Verd · Herbal</p>
+      <h3 class="card-name">Vert Naturel</h3>
+      <p class="card-notes">Eucaliptus · Romaní · Llimona · Cedre</p>
+      <div class="card-footer"><span class="card-price">85 €</span><span class="card-vol">50 ml · EDP</span></div>
+    </div>
+    <div class="card">
+      <p class="card-family">Oriental · Floral</p>
+      <h3 class="card-name">Nuit Sensuelle</h3>
+      <p class="card-notes">Vainilla · Ylang-ylang · Cedre · Mandarina</p>
+      <div class="card-footer"><span class="card-price">85 €</span><span class="card-vol">50 ml · EDP</span></div>
+    </div>
+    <div class="card">
+      <p class="card-family">Floral · Net</p>
+      <h3 class="card-name">Savon Élégant</h3>
+      <p class="card-notes">Lavanda · Bergamota · Petitgrain · Cedre</p>
+      <div class="card-footer"><span class="card-price">85 €</span><span class="card-vol">50 ml · EDP</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="nosaltres">
+  <div class="section-header">
+    <p class="section-label">Per què Scenta</p>
+    <h2 class="section-title">Els nostres valors</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="values-grid">
+    <div class="value-item">
+      <div class="value-icon">🌿</div>
+      <p class="value-title">Natural i ecològic</p>
+      <p class="value-text">Ingredients ecològics sense químics agressius, respectuosos amb la pell i el medi ambient.</p>
+    </div>
+    <div class="value-item">
+      <div class="value-icon">✦</div>
+      <p class="value-title">Fet a mida</p>
+      <p class="value-text">Creem perfums personalitzats que connecten amb la identitat de cada persona.</p>
+    </div>
+    <div class="value-item">
+      <div class="value-icon">♻️</div>
+      <p class="value-title">Sostenible</p>
+      <p class="value-text">Perfums recàrregables i sense test en animals. Cuidem el planeta en cada pas.</p>
+    </div>
+    <div class="value-item">
+      <div class="value-icon">🧪</div>
+      <p class="value-title">Crea el teu</p>
+      <p class="value-text">Kits per crear els teus propis perfums a casa amb olis essencials naturals.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <p class="section-label">La nostra missió</p>
+  <h2 class="section-title" style="font-family:'Cormorant Garamond',serif;font-weight:300;color:#f0ebe0">Canviem la perfumeria</h2>
+  <p>Volem oferir alternatives més saludables i respectuoses amb el medi ambient sense perdre la qualitat ni la sensació que et proporcionen els perfums. Perfums únics, fets a mida i sostenibles.</p>
+</section>
+
+<section class="contact-section" id="contacte">
+  <p class="section-label">Troba'ns</p>
+  <h2 class="section-title" style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:2rem">Contacte</h2>
+  <div class="contact-info">
+    <div class="contact-item">
+      <p class="label">Email</p>
+      <p class="val">scenta@perfums.cat</p>
+    </div>
+    <div class="contact-item">
+      <p class="label">Instagram</p>
+      <p class="val">@scenta.perfums</p>
+    </div>
+    <div class="contact-item">
+      <p class="label">Horari</p>
+      <p class="val">Estiu · De dilluns a dissabte</p>
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 Scenta · Perfumeria Artesanal Natural</footer>
+
+</body>
+</html>
